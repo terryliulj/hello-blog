@@ -7,9 +7,9 @@ spring:
     active: dev
   datasource:
     name: helloblog
-    url:  ${MYSQL_DATABASE:jdbc:mysql://127.0.0.1:3306/helloblog?useSSL=false&characterEncoding=utf8}
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD:root}
+    url:  ${HELLOBLOG_DATABASE:jdbc:mysql://127.0.0.1:3306/hello_blog?serverTimezone=UTC&useSSL=false&characterEncoding=utf8}
+    username: ${HELLOBLOG_USERNAME:root}
+    password: ${HELLOBLOG_PASSWORD:root}
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
